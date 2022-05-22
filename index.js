@@ -19,13 +19,13 @@ const main = async () => {
     if(upload) {
       await getAuth();
       const result = await handleUpload(upload);
-      console.log(result);
+      console.log(JSON.stringify(result));;
     }    
 
     if(submarine) {
       await getSubmarineAuth();
       const result = await handleSubmarine(submarine);
-      console.log(result);
+      console.log(JSON.stringify(result));;
     }
 
     if(auth) {
